@@ -1,0 +1,37 @@
+name: Oportunidad para simulacion
+description: Propuesta con evidencia; no autoriza una orden real.
+title: "[SIMULACION] Propuesta de oportunidad"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Solo simulacion. Mientras el repositorio sea publico, no incluir datos personales, capital exacto, cuentas, credenciales ni movimientos reales.
+        Datos insuficientes, costes desconocidos o controles fallidos producen NO OPERAR.
+  - type: textarea
+    id: market_evidence
+    attributes:
+      label: Instrumento, mercado, fuente y horas
+      description: Incluir moneda, bid/ask, hora del dato y consulta, cobertura, retraso, profundidad y enlaces.
+    validations:
+      required: true
+  - type: textarea
+    id: thesis
+    attributes:
+      label: Justificacion y condiciones
+      description: Entrada, objetivo, stop, invalidacion, vencimiento e incertidumbres. Sin datos verificados, registrar NO OPERAR.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Riesgo y costes
+      description: Cantidad simulada, comisiones, spread, deslizamiento, conversion, resultado neto previsto y perfil de costes verificado. No publicar capital privado.
+    validations:
+      required: true
+  - type: textarea
+    id: decision
+    attributes:
+      label: Revision de agentes
+      description: Version de estrategia, veredicto de riesgos, contradicciones y evidencia. No implica autorizacion real.
+    validations:
+      required: true
