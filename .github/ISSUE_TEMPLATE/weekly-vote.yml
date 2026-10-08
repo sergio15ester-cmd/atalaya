@@ -1,0 +1,74 @@
+name: Propuesta de votacion semanal
+description: Preparar estrategia y limites para revision humana.
+title: "[PROPUESTA SEMANAL] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Solo borrador. Enviar esta Issue no abre una votacion, no cuenta como voto ni autoriza dinero real.
+        Configurar privacidad, tres identidades, convocatoria, revision, hashes y plazos antes de votar.
+        Mientras sea publico, no incluir datos personales, capital exacto, cuentas o credenciales.
+  - type: textarea
+    id: strategy
+    attributes:
+      label: Estrategia, instrumentos y cambios
+      description: Hipotesis, condiciones de entrada y salida, vigencia pretendida y razones.
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Limites y costes propuestos
+      description: Simulacion sin apalancamiento; exposicion, perdida por operacion, diaria, acumulada, costes y NO OPERAR. No publicar capital personal.
+    validations:
+      required: true
+  - type: textarea
+    id: sealed_proposal
+    attributes:
+      label: Referencia a la propuesta sellada
+      description: Dejar pendientes los valores desconocidos; no inventar hashes.
+      placeholder: |
+        ID y revision:
+        Enlace al contenido y commit:
+        Hash del contenido:
+        Version de gobernanza:
+        Hash de configuracion de riesgo:
+    validations:
+      required: false
+  - type: textarea
+    id: schedule
+    attributes:
+      label: Apertura, plazo y vigencia
+      description: Registrar UTC y America/Santiago tras verificacion.
+      placeholder: |
+        Apertura:
+        Vencimiento:
+        Inicio de vigencia:
+        Fin de vigencia:
+    validations:
+      required: false
+  - type: textarea
+    id: invitations
+    attributes:
+      label: Convocatoria y verificaciones pendientes
+      description: Estado de acceso de los tres y referencia privada a solicitudes. No publicar identidades personales.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidencia e incertidumbres
+      description: Fuentes, resultados simulados, costes y asuntos para revision.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Alcance
+      options:
+        - label: Presentar esta propuesta no constituye voto ni aprobacion.
+          required: true
+        - label: Aprobar estrategia no autoriza una operacion real.
+          required: true
+        - label: No incluyo informacion personal o sensible ni credenciales.
+          required: true
