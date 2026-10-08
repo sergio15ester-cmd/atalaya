@@ -1,0 +1,93 @@
+{
+  "schema_version": "0.1",
+  "status": "draft",
+  "capital_initial_clp": null,
+  "team_members": null,
+  "data_provider": null,
+  "execution_provider": null,
+  "reporting_currency": "CLP",
+  "secondary_currency": "USD",
+  "session_timezone": "America/Santiago",
+  "session_start_local": null,
+  "session_end_local": null,
+  "execution": {
+    "mode": "paper",
+    "automatic_real_orders": false,
+    "real_orders_supported": false,
+    "leverage_allowed": false,
+    "short_selling_allowed": false,
+    "derivatives_allowed": false,
+    "leveraged_etfs_allowed": false,
+    "settled_cash_required": true
+  },
+  "activation_requirements": {
+    "exact_capital_required": true,
+    "three_team_members_required": true,
+    "data_and_execution_costs_required": true,
+    "session_hours_required": true,
+    "human_strategy_approval_required": true,
+    "real_trading_requires_separate_explicit_human_authorization": true
+  },
+  "risk_base": {
+    "method": "minimum_initial_capital_and_session_start_equity",
+    "external_cash_flows_allowed_during_validation": false
+  },
+  "risk_limits_proposed": {
+    "per_trade_loss_fraction_including_execution_costs": 0.0025,
+    "per_trade_exposure_fraction": 0.2,
+    "total_exposure_fraction": 0.4,
+    "total_open_risk_fraction": 0.005,
+    "daily_loss_fraction": 0.0075,
+    "maximum_drawdown_fraction": 0.05,
+    "maximum_loss_from_initial_capital_fraction": 0.05,
+    "maximum_simultaneous_positions": 2,
+    "maximum_entries_per_session": 3,
+    "maximum_reported_opportunities": 3,
+    "minimum_net_reward_to_risk_ratio": 2,
+    "maximum_round_trip_cost_fraction_of_trade_risk_budget": 0.25
+  },
+  "execution_cost_model": {
+    "buy_reference": "ask",
+    "sell_reference": "bid",
+    "additional_slippage_required": true,
+    "commission_minimums_required": true,
+    "fx_conversion_costs_required": true,
+    "spread_and_slippage_must_not_be_double_counted": true,
+    "cost_schedule_source": null,
+    "cost_schedule_verified_at_utc": null,
+    "tax_reporting": "execution_net_before_taxes",
+    "tax_treatment": "pending_instrument_and_taxpayer_specific_review",
+    "maximum_cost_age_seconds": null
+  },
+  "data_requirements": {
+    "source_required": true,
+    "market_timestamp_required": true,
+    "received_timestamp_required": true,
+    "fx_source_and_timestamp_required": true,
+    "maximum_quote_age_seconds": null,
+    "reject_missing_or_stale_data": true
+  },
+  "validation_proposed": {
+    "minimum_forward_sessions": 60,
+    "minimum_closed_forward_trades": 100,
+    "both_minimums_required": true,
+    "force_trades_to_reach_minimums": false,
+    "chronological_development_validation_test_split_required": true,
+    "untouched_final_test_required": true,
+    "all_attempted_variants_must_be_recorded": true,
+    "strategy_changes_start_new_forward_experiment": true,
+    "stress_spread_multiplier": 2,
+    "stress_additional_slippage_multiplier": 2,
+    "positive_net_expectancy_required": true,
+    "positive_stress_result_required": true,
+    "unresolved_risk_violations_allowed": false,
+    "expectancy_interval_covering_zero": "inconclusive",
+    "passing_validation_authorizes_real_trading": false
+  },
+  "breach_response_proposed": {
+    "block_new_paper_entries": true,
+    "simulate_liquidation_with_execution_costs": true,
+    "record_incident_and_require_human_review": true,
+    "loss_thresholds_are_guaranteed": false
+  }
+}
