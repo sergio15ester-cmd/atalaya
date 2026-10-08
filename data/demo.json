@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "mode": "paper",
+  "synthetic": true,
+  "market_context": "Ejemplo completamente ficticio para comprobar la contabilidad. No contiene cotizaciones ni oportunidades actuales.",
+  "policy": {},
+  "account": {"capital_initial_clp": 50000},
+  "opportunities": [],
+  "watchlist": [],
+  "sources": [],
+  "trades": [
+    {"mode": "paper", "symbol": "ACTIVO_DEMO", "closed_at": "2026-01-01T18:00:00Z", "pnl_clp": 80, "costs_clp": 6},
+    {"mode": "paper", "symbol": "ACTIVO_DEMO", "closed_at": "2026-01-02T18:00:00Z", "pnl_clp": -100, "costs_clp": 7},
+    {"mode": "paper", "symbol": "ACTIVO_DEMO", "closed_at": "2026-01-03T18:00:00Z", "pnl_clp": 50, "costs_clp": 5}
+  ],
+  "equity_curve": [
+    {"timestamp": "2026-01-01T00:00:00Z", "equity_clp": 50000},
+    {"timestamp": "2026-01-01T18:00:00Z", "equity_clp": 50080},
+    {"timestamp": "2026-01-02T18:00:00Z", "equity_clp": 49980},
+    {"timestamp": "2026-01-03T18:00:00Z", "equity_clp": 50030}
+  ],
+  "governance": {"proposal": {}, "votes": []},
+  "agent_decisions": [{"role": "coordinacion", "conclusion": "NO OPERAR: demostracion sin datos de mercado ni configuracion aprobada."}]
+}

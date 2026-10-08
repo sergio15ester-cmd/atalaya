@@ -1,0 +1,35 @@
+name: Pruebas de simulacion
+
+on:
+  pull_request:
+  push:
+    branches: [main, codex/ai-trading-lab-foundation]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      STREAMLIT_BROWSER_GATHER_USAGE_STATS: "false"
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: python -m pip --isolated install -r requirements.txt
+      - name: Comprobar modulos
+        run: python -m compileall -q app.py lab tests
+      - name: Probar controles y panel
+        run: python -m unittest discover -s tests -v

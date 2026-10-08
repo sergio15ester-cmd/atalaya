@@ -45,7 +45,7 @@ Captura intradía/streams/alertas rápidas: requieren un proceso activo y superv
 
 Work: investigación bajo demanda o tareas expresamente configuradas según cuenta/conexiones. No presumir vigilancia permanente. [Tareas programadas](https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt).
 
-En esta propuesta no hay workflows, conexiones o agentes autónomos activos. No contratar servicios ni gastar capital sin autorización.
+La versión 0.2 incorpora el panel local, cálculos de riesgo/estadísticas, informes y evaluador puro de votaciones. Hay un workflow de pruebas con datos ficticios; no hay trabajos de operaciones, conexiones financieras ni agentes autónomos activos. No contratar servicios ni gastar capital sin autorización.
 
 ## Trazabilidad
 Cada decisión incluirá ID, fecha UTC y America/Santiago, autores/agentes, fuentes, snapshot, versiones de código/instrucciones/configuración, resultado y razones. Las correcciones son nuevos eventos enlazados al original.

@@ -1,6 +1,6 @@
 # Gobernanza semanal
 
-Especificación para implementar. El scaffold permite redactar propuestas: crear una Issue, reaccionar o aprobar una PR no constituye un voto operativo ni una autorización financiera.
+La versión 0.2 incluye un evaluador puro de evidencia de votación. Todavía no incorpora colector autenticado de GitHub ni ratificador. Crear una Issue, reaccionar o aprobar una PR no constituye un voto operativo ni una autorización financiera. Un archivo JSON tampoco autentica personas: el panel invalida las banderas de confianza importadas.
 
 Mientras el repositorio sea público, solo borradores sin datos personales. La votación operativa requiere privacidad, identidades verificadas y controles implementados.
 

@@ -1,6 +1,6 @@
 # Validación del laboratorio
 
-Estado: propuesta para revisión humana. La configuración de ejemplo no activa operaciones. Capital exacto, integrantes, sesión, proveedor y tarifas están pendientes. Esta base contiene documentación y plantillas; aún no implementa el motor.
+Estado: límites y experimento propuestos para revisión humana. La configuración de ejemplo no activa operaciones. Capital exacto, integrantes, sesión, proveedor y tarifas están pendientes. La versión 0.2 implementa cálculos puros de riesgo, estadísticas y un panel de consulta; todavía no captura mercados ni genera ejecuciones prospectivas automáticamente.
 
 Aprobar una estrategia y superar pruebas no autoriza dinero real.
 

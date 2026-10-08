@@ -56,7 +56,8 @@
     "cost_schedule_source": null,
     "cost_schedule_verified_at_utc": null,
     "tax_reporting": "execution_net_before_taxes",
-    "tax_treatment": "pending_instrument_and_taxpayer_specific_review"
+    "tax_treatment": "pending_instrument_and_taxpayer_specific_review",
+    "maximum_cost_age_seconds": null
   },
   "data_requirements": {
     "source_required": true,
