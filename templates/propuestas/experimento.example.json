@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "proposed",
+  "synthetic": true,
+  "experiment_id": "EXAMPLE-001",
+  "option": null,
+  "approved": false,
+  "cash_budget_clp": null,
+  "exploration_hours_cap": null,
+  "price_hypothesis_clp": null,
+  "revenue_collected_clp": null,
+  "cash_costs_clp": null,
+  "channel_fees_clp": null,
+  "hours": {
+    "acquisition": null,
+    "development": null,
+    "delivery": null,
+    "support": null
+  },
+  "hour_value_clp": null,
+  "tax_treatment": "pending_review",
+  "evidence": [],
+  "decision": null,
+  "real_order_authorized": false
+}
